@@ -1,0 +1,11 @@
+{
+  "name": "react-native-text-with",
+  "version": "1.0.1",
+  "description": "Extension of <Text/> component to allow easy placement of object, image or icon beside text in React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luke Brandon Farrell",
+  "license": "MIT"
+}
