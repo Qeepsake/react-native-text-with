@@ -4,7 +4,7 @@
 [![npm licence](http://img.shields.io/npm/l/react-native-text-with.svg?style=flat-square)](https://npmjs.org/package/react-native-text-with)
 [![npm downloads](http://img.shields.io/npm/dt/react-native-text-with.svg?style=flat-square)](https://npmjs.org/package/react-native-text-with)
 
-Extension of <Text/> component to allow easy placement of object, image or icon beside text in React Native
+Extension of the `<Text/>` component to allow easy placement of object, image or icon beside text in React Native
 
 ## Install
 
