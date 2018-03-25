@@ -1,7 +1,20 @@
 {
   "name": "react-native-text-with",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extension of <Text/> component to allow easy placement of object, image or icon beside text in React Native",
+  "keywords": [
+    "react-native",
+    "text",
+    "text and icon",
+    "text and image",
+    "custom text",
+    "text extension",
+    "easy icons"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukeBrandonFarrell/react-native-text-with.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

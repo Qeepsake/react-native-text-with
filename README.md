@@ -4,7 +4,7 @@
 [![npm licence](http://img.shields.io/npm/l/react-native-text-with.svg?style=flat-square)](https://npmjs.org/package/react-native-text-with)
 [![npm downloads](http://img.shields.io/npm/dt/react-native-text-with.svg?style=flat-square)](https://npmjs.org/package/react-native-text-with)
 
-Extension of the `<Text/>` component to allow easy placement of object, image or icon beside text in React Native
+Extension of the `<Text/>` component to allow easy placement of an object, image or icon beside text in React Native
 
 ## Install
 
@@ -31,7 +31,7 @@ Then add it to your code:
 
 ```
 
-Works as a normal react <Text/> component. All probs available.
+Works as a normal react <Text/> component. All probs available from `<Text/>`.
 ```js
 <TextWith onPress={console.log('This is a ordinary text component')}>
   This is some text
@@ -50,15 +50,16 @@ Works with [react-native-vector-icons](https://github.com/oblador/react-native-v
 
 ## Props
 
-**Note:** The component can take all props available to <Text/>  
+**Note:** The component can take all props available to `<Text/>`
 
 | Prop            | Type          | Optional  | Default | Description                                                                             |
 | --------------- | ------------- | --------- | ------- | --------------------------------------------------------------------------------------- |
-| children        | Any           | Yes       |         | Pass anything into text <TextWith> I am text! </TextWith>                               |
+| children        | Any           | Yes       |         | Pass anything into text `<TextWith>` I am text! `</TextWith>`                           |
 | object          | object        | Yes       |         | Image, Icon or component of your choice to be rendered beside text                      |
 | objectPosition  | enum          | Yes       | 'left'  | Where the component should be rendered ('left', 'right', 'top', 'bottom')               |
 | objectMargin    | number        | Yes       | 4       | Direction of the collage: 'row' or 'column'.                                            |
-| style           | object        | Yes       |         | Style to be applied to the text component                                               |
+| textStyle       | object        | Yes       |         | Style to be applied to the text component                                               |
+| containerStyle  | object        | Yes       |         | Style to be applied to the container component. Text and Icon.                          |
 
 ## Contributing
 
