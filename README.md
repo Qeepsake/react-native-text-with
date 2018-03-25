@@ -6,11 +6,11 @@
 
 Extension of the `<Text/>` component to allow easy placement of an object, image or icon beside text in React Native
 
-![To the left](https://github.com/LukeBrandonFarrell/open-source-images/blob/master/react-native-text-with/one.png)
-![To the right](https://github.com/LukeBrandonFarrell/open-source-images/blob/master/react-native-text-with/two.png)
-![At the top](https://github.com/LukeBrandonFarrell/open-source-images/blob/master/react-native-text-with/three.png)
-![At the bottom](https://github.com/LukeBrandonFarrell/open-source-images/blob/master/react-native-text-with/four.png)
-![No object](https://github.com/LukeBrandonFarrell/open-source-images/blob/master/react-native-text-with/five.png)
+![To the left](https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-text-with/one.png)
+![To the right](https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-text-with/two.png)
+![At the top](https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-text-with/three.png)
+![At the bottom](https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-text-with/four.png)
+![No object](https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-text-with/five.png)
 
 ## Install
 

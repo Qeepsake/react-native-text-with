@@ -1,6 +1,6 @@
 {
   "name": "react-native-text-with",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Extension of <Text/> component to allow easy placement of object, image or icon beside text in React Native",
   "keywords": [
     "react-native",
