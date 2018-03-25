@@ -23,18 +23,18 @@ class TextWith extends React.Component {
       object,
       objectPosition,
       objectMargin,
-      style,
+      textStyle,
+      containerStyle,
       ...restProps
     } = this.props;
 
     const objectMarginStyle = this.getObjectMargin();
 
-    return <Text key='text' { ...restProps } style={[ objectMarginStyle, style ]}>{ children }</Text>;
+    return <Text key='text' { ...restProps } style={[ objectMarginStyle, textStyle ]}>{ children }</Text>;
   }
 
   render(){
-    const { containerStyle } = styles;
-    const { object, objectPosition } = this.props;
+    const { object, objectPosition, containerStyle } = this.props;
 
     const stackDirection = (
       objectPosition == 'left' || objectPosition == 'right'
@@ -47,9 +47,9 @@ class TextWith extends React.Component {
     if(objectPosition == 'right'
     || objectPosition == 'bottom'){
       components.reverse(); }
-
+      
     return (
-      <View style={[containerStyle, { flexDirection: stackDirection }]}>
+      <View style={[{ alignItems: 'center' }, containerStyle, { flexDirection: stackDirection }]}>
         { components }
       </View>
     );
@@ -66,13 +66,8 @@ TextWith.propTypes = {
   object: PropTypes.object,
   objectPosition: PropTypes.oneOf(['left', 'right', 'top', 'bottom']),
   objectMargin: PropTypes.number,
-  style: PropTypes.object,
+  textStyle: PropTypes.object,
+  containerStyle: PropTypes.object,
 };
-
-const styles = StyleSheet.create({
-  containerStyle : {
-    alignItems: 'center',
-  },
-});
 
 export default TextWith;

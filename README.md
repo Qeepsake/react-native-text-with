@@ -6,6 +6,12 @@
 
 Extension of the `<Text/>` component to allow easy placement of an object, image or icon beside text in React Native
 
+![To the left](https://github.com/LukeBrandonFarrell/open-source-images/blob/master/react-native-text-with/one.png)
+![To the right](https://github.com/LukeBrandonFarrell/open-source-images/blob/master/react-native-text-with/two.png)
+![At the top](https://github.com/LukeBrandonFarrell/open-source-images/blob/master/react-native-text-with/three.png)
+![At the bottom](https://github.com/LukeBrandonFarrell/open-source-images/blob/master/react-native-text-with/four.png)
+![No object](https://github.com/LukeBrandonFarrell/open-source-images/blob/master/react-native-text-with/five.png)
+
 ## Install
 
 To get started install via npm:
@@ -52,14 +58,14 @@ Works with [react-native-vector-icons](https://github.com/oblador/react-native-v
 
 **Note:** The component can take all props available to `<Text/>`
 
-| Prop            | Type          | Optional  | Default | Description                                                                             |
-| --------------- | ------------- | --------- | ------- | --------------------------------------------------------------------------------------- |
-| children        | Any           | Yes       |         | Pass anything into text `<TextWith>` I am text! `</TextWith>`                           |
-| object          | object        | Yes       |         | Image, Icon or component of your choice to be rendered beside text                      |
-| objectPosition  | enum          | Yes       | 'left'  | Where the component should be rendered ('left', 'right', 'top', 'bottom')               |
-| objectMargin    | number        | Yes       | 4       | Direction of the collage: 'row' or 'column'.                                            |
-| textStyle       | object        | Yes       |         | Style to be applied to the text component                                               |
-| containerStyle  | object        | Yes       |         | Style to be applied to the container component. Text and Icon.                          |
+| Prop            | Type          | Optional  | Default              | Description                                                                             |
+| --------------- | ------------- | --------- | -------------------- | --------------------------------------------------------------------------------------- |
+| children        | Any           | Yes       |                      | Pass anything into text `<TextWith>` I am text! `</TextWith>`                           |
+| object          | object        | Yes       |                      | Image, Icon or component of your choice to be rendered beside text                      |
+| objectPosition  | enum          | Yes       | 'left'               | Where the component should be rendered ('left', 'right', 'top', 'bottom')               |
+| objectMargin    | number        | Yes       | 4                    | Direction of the collage: 'row' or 'column'.                                            |
+| textStyle       | object        | Yes       |                      | Style to be applied to the text component                                               |
+| containerStyle  | object        | Yes       | alignItems: 'center' | Style to be applied to the container component. Text and Icon.                          |
 
 ## Contributing
 
