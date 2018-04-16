@@ -39,12 +39,12 @@ Then add it to your code:
 
 Works as a normal react <Text/> component. All probs available from `<Text/>`.
 ```js
-<TextWith onPress={console.log('This is a ordinary text component')}>
+<TextWith numberOfLines={1} onPress={console.log('This is a ordinary text component')}>
   This is some text
 </TextWith>
 ```
 
-Works with [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons). But it's not a dependency! nor a necessity.
+Works well with [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons). But it's not a dependency! nor a necessity.
 ```js
 <TextWith
   object={<Icon name='pencil' size={ 18 }/>}

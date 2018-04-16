@@ -47,7 +47,7 @@ class TextWith extends React.Component {
     if(objectPosition == 'right'
     || objectPosition == 'bottom'){
       components.reverse(); }
-      
+
     return (
       <View style={[{ alignItems: 'center' }, containerStyle, { flexDirection: stackDirection }]}>
         { components }
@@ -66,8 +66,8 @@ TextWith.propTypes = {
   object: PropTypes.object,
   objectPosition: PropTypes.oneOf(['left', 'right', 'top', 'bottom']),
   objectMargin: PropTypes.number,
-  textStyle: PropTypes.object,
-  containerStyle: PropTypes.object,
+  textStyle: PropTypes.any,
+  containerStyle: PropTypes.any,
 };
 
 export default TextWith;
