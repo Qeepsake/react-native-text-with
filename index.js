@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 
 class TextWith extends React.Component {
@@ -25,6 +25,7 @@ class TextWith extends React.Component {
       objectMargin,
       textStyle,
       containerStyle,
+      onPress,
       ...restProps
     } = this.props;
 
@@ -34,7 +35,7 @@ class TextWith extends React.Component {
   }
 
   render(){
-    const { object, objectPosition, containerStyle } = this.props;
+    const { object, objectPosition, containerStyle, onPress } = this.props;
 
     const stackDirection = (
       objectPosition == 'left' || objectPosition == 'right'
@@ -49,9 +50,11 @@ class TextWith extends React.Component {
       components.reverse(); }
 
     return (
-      <View style={[{ alignItems: 'center' }, containerStyle, { flexDirection: stackDirection }]}>
-        { components }
-      </View>
+      <TouchableOpacity onPress={onPress}>
+        <View style={[{ alignItems: 'center' }, containerStyle, { flexDirection: stackDirection }]}>
+          { components }
+        </View>
+      </TouchableOpacity>
     );
   }
 }
