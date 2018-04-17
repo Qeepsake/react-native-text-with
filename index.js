@@ -50,7 +50,7 @@ class TextWith extends React.Component {
       components.reverse(); }
 
     return (
-      <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity onPress={onPress} disabled={ onPress ? false : true }>
         <View style={[{ alignItems: 'center' }, containerStyle, { flexDirection: stackDirection }]}>
           { components }
         </View>
@@ -62,6 +62,7 @@ class TextWith extends React.Component {
 TextWith.defaultProps = {
   objectPosition: 'left',
   objectMargin: 4,
+  onPress: null,
 };
 
 TextWith.propTypes = {
